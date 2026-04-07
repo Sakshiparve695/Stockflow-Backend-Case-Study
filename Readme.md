@@ -132,7 +132,11 @@ def create_product():
 4. Are there specific validation rules or format constraints for SKU?
 5. What fields are optional during product creation?
 
+---
+
  # Part 2: Database Design
+
+---
 
 ## Approach
 I designed the database keeping in mind real-world use cases like handling multiple warehouses, tracking inventory changes, and managing supplier relationships. I tried to keep the design simple but scalable.
@@ -244,7 +248,11 @@ I designed the database keeping in mind real-world use cases like handling multi
 - Bundle products are made using existing products  
 - Suppliers can provide multiple products
 
+---
+
 ## Part 3: API Implementation
+
+---
 
 ### Approach
 I implemented this endpoint by fetching all products for a given company across its warehouses, checking their inventory levels, and comparing them with a defined threshold.  
